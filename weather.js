@@ -44,12 +44,12 @@ function changeTemp(){
   if (temp.innerHTML == temp_c){
     temp.innerHTML = temp_f;
     unit.innerHTML = "&#8457";
-    min_max.innerHTML = "High: " + max_f + "&#8457 Low: " + min_f + "&#8457";
+    min_max.innerHTML = "High: " + max_f + "&#8457 &nbsp;&nbsp;&nbsp;&nbsp; Low: " + min_f + "&#8457";
   }
   else{
     temp.innerHTML = temp_c;
     unit.innerHTML = "&#8451";
-    min_max.innerHTML = "High: " + max_c + "&#8451 Low: " + min_c + "&#8451";
+    min_max.innerHTML = "High: " + max_c + "&#8451 &nbsp;&nbsp;&nbsp;&nbsp; Low: " + min_c + "&#8451";
   }
 }
 
@@ -78,7 +78,7 @@ function getWeather(long, lat){
     //other.innerHTML = "Humidity: " + location.main.humidity + "% <br/>Wind: " + location.wind.speed + " mph";
     min_c = Math.round(location.main.temp_min);
     max_c = Math.round(location.main.temp_max);
-    min_max.innerHTML = "High: " + max_c + "&#8451 Low: " + min_c + "&#8451";
+    min_max.innerHTML = "High: " + max_c + "&#8451 &nbsp;&nbsp;&nbsp;&nbsp; Low: " + min_c + "&#8451";
     min_f = tempConvert(min_c);
     max_f = tempConvert(max_c);
     temp_c = Math.round(location.main.temp);
