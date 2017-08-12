@@ -3,7 +3,7 @@ var weather = document.getElementById("weather");
 var temp = document.getElementById("temp");
 var unit = document.getElementById("unit");
 var min_max = document.getElementById("min_max");
-var other = document.getElementById("other");
+//var other = document.getElementById("other");
 var lat, long, temp_c, temp_f, min_c, min_f, max_c, max_f;
 
 /*
@@ -75,7 +75,7 @@ function getWeather(long, lat){
     //handle JSON data
     city.innerHTML = location.name + ", " + location.sys.country;
     weather.innerHTML = location.weather[0].main + "<img src=" + location.weather[0].icon + " />";
-    other.innerHTML = "Humidity: " + location.main.humidity + "% <br/>Wind: " + location.wind.speed + " mph";
+    //other.innerHTML = "Humidity: " + location.main.humidity + "% <br/>Wind: " + location.wind.speed + " mph";
     min_c = Math.round(location.main.temp_min);
     max_c = Math.round(location.main.temp_max);
     min_max.innerHTML = "High: " + max_c + "&#8451 Low: " + min_c + "&#8451";
