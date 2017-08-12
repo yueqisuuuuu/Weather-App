@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Weather App </title>
+	<link href="weather.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Weather App</h1>
+
+<div id="display">
+  <p id="time"></p>
+  <p id="city"></p>
+  <p id="t" onClick="changeTemp()"><span id="temp"></span> <span id="unit"></span> </p>
+  <p id="weather"> Enable location and weather will show here</p>
+  <p id="min_max" onClick="changeTemp()"></p>
+  <p id="other"></p>
+  
+</div>
+
+<footer> <small>freeCodeCamp Project -- Created by Yueqi Su </small> </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="weather.js" type="text/javascript"></script>
+
+</body>
+</html>
