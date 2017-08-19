@@ -23,4 +23,12 @@ img{
 footer{
   background-color: #1C2C55;
   color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#portfolio{
+  text-decoration: none;
+  color: #C3E8F0;
 }
